@@ -674,6 +674,13 @@ img {
   gap: 40px;
 }
 
+.dark-content,
+.overlapping-box {
+  flex: 1;
+  position: relative;
+  z-index: 2;
+}
+
 .dark-content {
   flex: 1;
   position: relative;
@@ -1196,6 +1203,7 @@ footer .container {
   .overlapping-box,
   .highlight-content {
     max-width: 100%;
+    width: 100%;
   }
 
   .dark-section h2 {
@@ -1203,7 +1211,9 @@ footer .container {
   }
 
   .overlap-image {
-    height: 400px;
+    height: 300px;
+    width: 100%;
+    margin: 0 auto;
   }
 
   .features-grid {
@@ -1257,7 +1267,7 @@ footer .container {
   }
 
   .overlap-image {
-    height: 300px;
+    height: 260px;
     padding: 8px;
   }
 
@@ -1350,6 +1360,7 @@ footer .container {
   .gallery-grid {
     grid-template-columns: repeat(2, 1fr);
   }
+  
 }
 
 @media (max-width: 576px) {
@@ -1405,4 +1416,26 @@ footer .container {
     height: 40px;
     font-size: 1rem;
   }
+
+  .dark-section {
+    padding: 40px 0;
+  }
+
+  .dark-section .container {
+    gap: 20px;
+  }
+
+  .dark-section h2 {
+    font-size: 1.4rem;
+  }
+
+  .overlap-image {
+    height: 200px;
+  }
+
+  .author-info {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
 }
